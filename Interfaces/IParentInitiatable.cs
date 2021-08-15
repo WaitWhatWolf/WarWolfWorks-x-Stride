@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WarWolfWorks_x_Stride.Interfaces
+﻿namespace WarWolfWorks_x_Stride.Interfaces
 {
     /// <summary>
     /// Used for basic initiation of a child object.
