@@ -3420,7 +3420,7 @@ namespace WarWolfWorksxS.Utility
                     }
                 }
 
-                public static async Task<string?> GetTextAsync(CancellationToken cancellation)
+                public static async Task<string> GetTextAsync(CancellationToken cancellation)
                 {
                     if (!IsClipboardFormatAvailable(cfUnicodeText))
                     {
@@ -3431,7 +3431,7 @@ namespace WarWolfWorksxS.Utility
                     return InnerGet();
                 }
 
-                public static string? GetText()
+                public static string GetText()
                 {
                     if (!IsClipboardFormatAvailable(cfUnicodeText))
                     {
@@ -3442,7 +3442,7 @@ namespace WarWolfWorksxS.Utility
                     return InnerGet();
                 }
 
-                static string? InnerGet()
+                static string InnerGet()
                 {
                     IntPtr handle = default;
 
@@ -3544,14 +3544,14 @@ namespace WarWolfWorksxS.Utility
                     generalPasteboard = objc_msgSend(nsPasteboard, generalPasteboardRegister);
                 }
 
-                public static string? GetText()
+                public static string GetText()
                 {
                     var ptr = objc_msgSend(generalPasteboard, stringForTypeRegister, nsStringPboardType);
                     var charArray = objc_msgSend(ptr, utf8Register);
                     return Marshal.PtrToStringAnsi(charArray);
                 }
 
-                public static Task<string?> GetTextAsync(CancellationToken cancellation)
+                public static Task<string> GetTextAsync(CancellationToken cancellation)
                 {
                     return Task.FromResult(GetText());
                 }
@@ -3650,7 +3650,7 @@ namespace WarWolfWorksxS.Utility
                     }
                 }
 
-                public static string? GetText()
+                public static string GetText()
                 {
                     var tempFileName = Path.GetTempFileName();
                     try
@@ -3664,7 +3664,7 @@ namespace WarWolfWorksxS.Utility
                     }
                 }
 
-                public static async Task<string?> GetTextAsync(CancellationToken cancellation)
+                public static async Task<string> GetTextAsync(CancellationToken cancellation)
                 {
                     var tempFileName = Path.GetTempFileName();
                     try

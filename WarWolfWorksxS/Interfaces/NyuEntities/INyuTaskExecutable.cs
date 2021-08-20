@@ -7,7 +7,6 @@ namespace WarWolfWorksxS.Interfaces.NyuEntities
 {
     /// <summary>
     /// Used on an <see cref="INyuComponent"/>, a <see cref="Nyu"/> entity or sub-component to indicate that it has Task to execute.
-    /// Note that if this is implemented in <see cref=""/>
     /// </summary>
     public interface INyuTaskExecutable
     {
