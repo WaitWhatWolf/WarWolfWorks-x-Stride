@@ -4,7 +4,7 @@ using WarWolfWorksxS.NyuEntities;
 namespace WarWolfWorksxS
 {
     /// <summary>
-    /// All static & constant resources of this class library.
+    /// All static and constant resources of this class library.
     /// </summary>
     public static class WWWResources
     {
