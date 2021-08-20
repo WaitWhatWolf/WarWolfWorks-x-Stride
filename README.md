@@ -4,8 +4,6 @@
  Note: It is currently under heavy developement, and not usable by any means (yet)
 
 # Setting Up
-As of now, Stride does not support Plugins yet, so to implement this library to your project, you have to copy the WarWolfWorksxS folder into your \<ProjectName\>.Game folder.
-
 To set-up the library, use the `WWWGame` class as the Game class;
 It might look something like this:
 ```cs
