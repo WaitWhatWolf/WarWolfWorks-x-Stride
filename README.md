@@ -1,3 +1,6 @@
+#Important Note
+This library's developement has been abandoned until a more suitable version of stride is released.
+
 # WarWolfWorks-x-Stride
  A Stride version of the WarWolfWorks library
  
